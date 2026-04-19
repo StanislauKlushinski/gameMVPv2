@@ -1,0 +1,14 @@
+---
+description: Require explicit approval before editing Unity-generated project files
+alwaysApply: true
+---
+
+# Unity Generated Files Safety
+
+- Do not create, edit, rename, move, or delete Unity-generated project files unless the user explicitly asks for that exact change.
+- Treat `ProjectSettings/` files as engine-managed configuration and avoid changing them during normal feature work.
+- Treat `Packages/packages-lock.json` as generated dependency state and do not edit it by hand unless the task is specifically about package resolution.
+- Do not modify generated Unity folders such as `Library/`, `Temp/`, `Logs/`, `Obj/`, `Build/`, `Builds/`, or `UserSettings/`.
+- Avoid incidental edits to `.sln`, `.csproj`, `.user`, and similar IDE or tooling files unless the user explicitly requested tooling setup.
+- If a requested change would touch Unity-generated or engine-managed files, explain the risk and ask for confirmation before proceeding.
+- Prefer changes in user-authored source files such as `.cs`, `.uxml`, `.uss`, documentation, and intentional project configuration files owned by the team.
