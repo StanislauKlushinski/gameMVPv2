@@ -7,7 +7,7 @@ todos:
     status: completed
   - id: release-1-numbers
     content: Реализовать Релиз 1. Базовые Числа И Value Types.
-    status: in_progress
+    status: completed
   - id: release-2-data
     content: "Реализовать Релиз 2. Data Layer: ScriptableObject Definitions."
     status: pending

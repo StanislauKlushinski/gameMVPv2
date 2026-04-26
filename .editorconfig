@@ -1,0 +1,15 @@
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.cs]
+dotnet_diagnostic.IDE0130.severity = none
+
+# The project currently targets C# 9 style, so keep namespace declarations block-scoped.
+csharp_style_namespace_declarations = block_scoped:suggestion
+csharp_prefer_braces = true:suggestion

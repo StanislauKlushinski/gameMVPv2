@@ -11,7 +11,7 @@ This project uses Unity 6.2 (LTS 2025) with modern systems and architectural app
 ## Tech Stack
 
 - **Unity Version**: 6.2 LTS (2025)
-- **C# Version**: 12.0
+- **C# Version**: 9.0 (current compiler target in this project)
 - **Rendering Pipeline**: URP (Universal Render Pipeline)
 - **Input System**: New Input System (InputSystem package)
 - **UI Framework**: UI Toolkit (not UGUI)
@@ -38,7 +38,8 @@ This project uses Unity 6.2 (LTS 2025) with modern systems and architectural app
 
 ### 4. Code Style
 - Follow the Unity C# Style Guide
-- Use modern C# features (pattern matching, records, init-only properties)
+- Use modern C# features that are compatible with C# 9.0 (for example pattern matching, records, init-only properties)
+- Do not use C# 10+ syntax until the project compiler target is upgraded; avoid file-scoped namespaces and other newer language features
 - async/await instead of coroutines where possible
 
 ## Supported Platforms

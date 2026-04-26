@@ -86,6 +86,8 @@ sysinfo.txt
 /[Rr]ecordings/
 /[Pp]roject[Ss]ettings/boot.config
 /[Pp]ackages/packages-lock*.json
+/Assets/[._]Recovery/**
+/Assets/[._]Recovery.meta
 
 # Git files
 .gitignore
