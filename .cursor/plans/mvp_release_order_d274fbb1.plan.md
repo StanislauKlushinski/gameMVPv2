@@ -1,30 +1,63 @@
 ---
 name: MVP Release Order
-overview: "План задаёт подробный порядок реализации классов и функционала для MVP 0.1 на основе архитектурного скелета и гейм-дизайн документа. В проекте сейчас нет C#-скриптов, поэтому порядок строится от базовых зависимостей к вертикальным игровым срезам: экономика, производство, межэпохная связь, цель, сохранение и UI."
+overview: ""
 todos:
   - id: release-0-shell
-    content: Подготовить папки и возможные assembly boundaries для Core/Data/Runtime/UI.
-    status: pending
+    content: Реализовать Релиз 0. Каркас Кода.
+    status: completed
   - id: release-1-numbers
-    content: Реализовать `GameNumber` и `ResourceAmount`, затем покрыть арифметику и сериализацию тестами.
-    status: pending
+    content: Реализовать Релиз 1. Базовые Числа И Value Types.
+    status: in_progress
   - id: release-2-data
-    content: Реализовать ScriptableObject definitions и создать MVP-контент через Unity Editor.
+    content: "Реализовать Релиз 2. Data Layer: ScriptableObject Definitions."
     status: pending
   - id: release-3-state
-    content: Реализовать runtime state и фабрику нового `GameState`.
+    content: "Реализовать Релиз 3. Runtime State: Чистое Состояние Игры."
     status: pending
   - id: release-4-services
-    content: Реализовать утилиты и сервисы в порядке `Multiplier` → `Building` → `Production` → `Logistics` → `Tech` → `CrossEpoch` → `Objective`.
+    content: Реализовать Релиз 4. Утилиты И Балансные Формулы.
     status: pending
-  - id: release-5-management
-    content: Реализовать `SaveService`, `OfflineProgressService`, `PrestigeService` и `GameManager` с корректным tick pipeline.
+  - id: release-5-multiplier-service
+    content: Реализовать Релиз 5. MultiplierService.
     status: pending
-  - id: release-6-ui
-    content: Реализовать UI Toolkit контроллеры от базовой играбельности к финальной цели и престиж-экрану.
+  - id: release-6-building-service
+    content: "Реализовать Релиз 6. BuildingService: Строительство И Апгрейды."
     status: pending
-  - id: release-7-acceptance
-    content: Проверить MVP по критериям готовности из дизайн-документа и провести баланс-проход.
+  - id: release-7-production-service
+    content: "Реализовать Релиз 7. ProductionService: Производство Внутри Эпохи."
+    status: pending
+  - id: release-8-logistics-service
+    content: "Реализовать Релиз 8. LogisticsService: Пул, Буферы И Приоритеты."
+    status: pending
+  - id: release-9-tech-service
+    content: "Реализовать Релиз 9. TechService: Технологии И Разблокировки."
+    status: pending
+  - id: release-10-cross-epoch-service
+    content: "Реализовать Релиз 10. CrossEpochService: Межэпохный Канал."
+    status: pending
+  - id: release-11-objective-service
+    content: "Реализовать Релиз 11. ObjectiveService: Финальная Цель MVP."
+    status: pending
+  - id: release-12-prestige-service
+    content: "Реализовать Релиз 12. PrestigeService: Заготовка Престижа."
+    status: pending
+  - id: release-13-save-offline-service
+    content: Реализовать Релиз 13. SaveService И OfflineProgressService.
+    status: pending
+  - id: release-14-game-manager
+    content: "Реализовать Релиз 14. GameManager: Точка Сборки И Tick Pipeline."
+    status: pending
+  - id: release-15-min-ui
+    content: Реализовать Релиз 15. Минимальный UI Для Играбельности.
+    status: pending
+  - id: release-16-ui-progression
+    content: Реализовать Релиз 16. UI Прогрессии И Межэпохной Связи.
+    status: pending
+  - id: release-17-ui-finale
+    content: Реализовать Релиз 17. UI Финала, Оффлайна И Престижа.
+    status: pending
+  - id: release-18-tests-balance-acceptance
+    content: Реализовать Релиз 18. Тесты, Баланс И Acceptance.
     status: pending
 isProject: false
 ---
