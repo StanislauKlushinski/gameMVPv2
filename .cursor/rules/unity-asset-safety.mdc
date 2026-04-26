@@ -9,6 +9,6 @@ alwaysApply: true
 - Treat `.meta` files as Unity-generated files that preserve GUID links between assets.
 - Prefer creating or renaming Unity assets in the Unity Editor, not by writing raw files from the agent.
 - Do not manually create Unity asset files such as `.unity`, `.prefab`, `.asset`, `.mat`, `.anim`, or similar serialized project files unless the user explicitly requests raw file editing.
-- If a task requires a new Unity asset, ask the user to create it in the Unity Editor first, then update safe text-based files like `.cs`, `.md`, or clearly user-authored config files.
+- If a task requires a new Unity asset, stop and ask the user to create it in the Unity Editor first. Include the exact asset type, suggested path/name, expected inspector setup, and any follow-up steps the agent can perform afterward.
 - If editing an existing Unity-serialized text file is unavoidable, preserve existing GUIDs, file IDs, and references, and never generate a companion `.meta` file by hand.
 - When unsure whether a file is Unity-generated or user-authored, stop and ask before editing it.
